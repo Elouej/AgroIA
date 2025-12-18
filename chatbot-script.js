@@ -796,7 +796,7 @@ class DiagnosticChatbot {
     // Settings Management
     loadSettings() {
         const defaults = {
-            apiUrl: 'http://localhost:5001',
+            apiUrl: 'https://plant-disease-ai-8sfm.onrender.com',
             userId: ''
         };
 
