@@ -11,8 +11,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import tensorflow as tf
 
-# Supprimer les messages verbeux de TensorFlow
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# Supprimer TOUS les messages verbeux de TensorFlow (y compris CUDA/CPU warnings)
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # 0=all, 1=no INFO, 2=no INFO/WARNING, 3=only ERRORS
 
 # Configuration
 app = Flask(__name__)
